@@ -1,0 +1,41 @@
+/* General Styling */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Inter", sans-serif;
+}
+
+body {
+}
+
+/* Navbar Styling*/
+
+.navbar {
+  background: #21222a;
+  display: flex;
+  align-items: center;
+  height: 90px;
+  padding: 30px 25px;
+}
+
+.nav--icon {
+  height: 30px;
+  margin-right: 7px;
+}
+
+.nav--icon_text {
+  color: #61dafb;
+  margin-right: auto;
+  font-size: 22px;
+}
+
+.nav--title {
+  color: #deebf8;
+}
+
+/* Main Styling */
