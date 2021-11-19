@@ -11,6 +11,7 @@ html {
 }
 
 body {
+  height: 100vh;
 }
 
 /* Navbar Styling*/
@@ -39,3 +40,50 @@ body {
 }
 
 /* Main Styling */
+
+.main--content {
+  background: #282d35;
+  background-image: url(../img/react-icon-large.png);
+  background-repeat: no-repeat;
+  background-position: right 40%;
+  height: 100vh;
+  padding: 57px 27px;
+}
+
+.main--title {
+  font-size: 39px;
+  letter-spacing: -0.05em;
+}
+
+.main--title,
+.main--facts {
+  color: #fff;
+}
+
+.main--facts {
+  padding-left: 44px;
+  margin-top: 46px;
+}
+
+.main--facts > li {
+  padding-block: 10px;
+}
+
+.main--facts > li::marker {
+  font-size: 1.4rem;
+  color: #61dafb;
+}
+
+/* Smartphones */
+@media only screen and (max-width: 500px) {
+  .main--facts {
+    max-width: 300px;
+  }
+}
+
+/* Tablets */
+@media (min-width: 501px) and (max-width: 768px) {
+  .main--facts {
+    max-width: 600px;
+  }
+}

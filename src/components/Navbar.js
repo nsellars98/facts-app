@@ -1,6 +1,6 @@
 import React from "react";
 import "../style/style.css";
-import icon from "../img/react-icon-small.png"
+import icon from "../img/react-icon-small.png";
 
 function Navbar() {
   return (
