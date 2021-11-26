@@ -1,5 +1,16 @@
 /* General Styling */
 
+:root {
+  --clr-accent-primary: #61dafb;
+  --clr-accent-secondary: #deebf8;
+  --clr-background-primary: #282d35;
+  --clr-background-secondary: #21222a;
+
+  --clr-neutral-100: #fff;
+
+  --ff-primary: "Inter", sans-serif;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -7,83 +18,76 @@
 }
 
 html {
-  font-family: "Inter", sans-serif;
+  font-family: var(--ff-primary);
+  font-size: 100%;
 }
 
 body {
   height: 100vh;
 }
 
-/* Navbar Styling*/
+img {
+  display: block;
+  max-width: 100%;
+}
+
+/* Navbar Styling */
 
 .navbar {
-  background: #21222a;
+  background: var(--clr-background-secondary);
   display: flex;
   align-items: center;
-  height: 90px;
-  padding: 30px 25px;
+  height: 5.625rem;
+  padding: 1.875rem 1.5625rem;
 }
 
 .nav--icon {
-  height: 30px;
-  margin-right: 7px;
+  height: 1.875rem;
+  margin-right: 0.4375rem;
 }
 
 .nav--icon_text {
-  color: #61dafb;
+  color: var(--clr-accent-primary);
   margin-right: auto;
-  font-size: 22px;
+  font-size: 1.375rem;
 }
 
 .nav--title {
-  color: #deebf8;
+  color: var(--clr-accent-secondary);
 }
 
 /* Main Styling */
 
 .main--content {
-  background: #282d35;
-  background-image: url(../img/react-icon-large.png);
+  background: var(--clr-background-primary);
+  background-image: url(../assets/img/react-icon-large.png);
   background-repeat: no-repeat;
   background-position: right 40%;
   height: 100vh;
-  padding: 57px 27px;
+  width: min(100%, 70.5rem);
+  padding: 3.5625rem 1.6875rem;
 }
 
 .main--title {
-  font-size: 39px;
+  font-size: 2.4375rem;
   letter-spacing: -0.05em;
 }
 
 .main--title,
 .main--facts {
-  color: #fff;
+  color: var(--clr-neutral-100);
 }
 
 .main--facts {
-  padding-left: 44px;
-  margin-top: 46px;
+  padding-left: 2.75rem;
+  margin-top: 2.875rem;
 }
 
 .main--facts > li {
-  padding-block: 10px;
+  padding-block: 0.625rem;
 }
 
 .main--facts > li::marker {
   font-size: 1.4rem;
-  color: #61dafb;
-}
-
-/* Smartphones */
-@media only screen and (max-width: 500px) {
-  .main--facts {
-    max-width: 300px;
-  }
-}
-
-/* Tablets */
-@media (min-width: 501px) and (max-width: 768px) {
-  .main--facts {
-    max-width: 600px;
-  }
+  color: var(--clr-accent-primary);
 }
