@@ -11,9 +11,9 @@
   --ff-primary: "Inter", sans-serif;
 }
 
-* {
-  margin: 0;
-  padding: 0;
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 
@@ -23,7 +23,8 @@ html {
 }
 
 body {
-  height: 100vh;
+  margin: 0;
+  background: var(--clr-background-primary);
 }
 
 img {
@@ -37,13 +38,13 @@ img {
   background: var(--clr-background-secondary);
   display: flex;
   align-items: center;
-  height: 5.625rem;
-  padding: 1.875rem 1.5625rem;
+  height: 5.625em;
+  padding: 1.875em 1.5625em;
 }
 
 .nav--icon {
-  height: 1.875rem;
-  margin-right: 0.4375rem;
+  height: 1.875em;
+  margin-right: 0.4375em;
 }
 
 .nav--icon_text {
@@ -59,13 +60,12 @@ img {
 /* Main Styling */
 
 .main--content {
-  background: var(--clr-background-primary);
+  color: var(--clr-neutral-100);
   background-image: url(../assets/img/react-icon-large.png);
   background-repeat: no-repeat;
-  background-position: right 40%;
-  height: 100vh;
-  width: min(100%, 70.5rem);
-  padding: 3.5625rem 1.6875rem;
+  background-position: right 70%;
+  width: min(100%, 70.5em);
+  padding: 2.5em 1.67em;
 }
 
 .main--title {
@@ -73,18 +73,14 @@ img {
   letter-spacing: -0.05em;
 }
 
-.main--title,
 .main--facts {
-  color: var(--clr-neutral-100);
-}
-
-.main--facts {
-  padding-left: 2.75rem;
-  margin-top: 2.875rem;
+  padding-left: 2.75em;
+  margin-top: 2.875em;
+  max-width: 425px;
 }
 
 .main--facts > li {
-  padding-block: 0.625rem;
+  padding-block: 0.625em;
 }
 
 .main--facts > li::marker {
